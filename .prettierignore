@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+build/
+coverage/
+test-results/
+playwright-report/
+public/
+research/
+logo.svg
+package-lock.json
+next-env.d.ts
