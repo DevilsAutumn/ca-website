@@ -51,9 +51,7 @@ export function OrientationSection() {
               "ease-[ease] py-7 px-6 gap-5 last:border-r-0 focus-visible:bg-surface active:bg-surface [&_>_div]:min-w-0",
               "[&_h3]:mt-0 [&_h3]:mb-2.5 [&_h3]:text-ink [&_h3]:text-[21px] [&_h3]:font-medium [&_h3]:tracking-[-0.04em]",
               "[&_h3]:leading-[1.25] [&_h3]:mx-0 [&_p]:text-ink-muted [&_p]:text-[14px] [&_p]:leading-[1.6] [&_p]:m-0",
-              "[&_>_span]:shrink-0 [&_>_span]:text-teal-dark [&_>_span]:text-[22px] [&_>_span]:leading-[1.2]",
-              "[&_>_span]:transition-[transform] [&_>_span]:duration-180 [&_>_span]:ease-[ease]",
-              "pointer-fine:hover:bg-surface pointer-fine:[&:hover_>_span]:transform-[translate(2px,-2px)]",
+              "pointer-fine:hover:bg-surface pointer-fine:[&:hover_>_.arrow]:transform-[translate(2px,-2px)]",
               "max-[901px]:items-start max-[901px]:border-r-0 max-[901px]:border-b max-[901px]:border-b-line",
               "max-[901px]:py-6 max-[901px]:px-4 max-[901px]:gap-4 max-[901px]:last:border-b-0",
             )}
@@ -64,7 +62,10 @@ export function OrientationSection() {
               <h3>{step.title}</h3>
               <p>{step.description}</p>
             </div>
-            <Arrow />
+            <Arrow
+              size={22}
+              className="text-teal-dark transition-[transform] duration-180 ease-[ease]"
+            />
           </Link>
         ))}
       </nav>

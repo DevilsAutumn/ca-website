@@ -106,6 +106,28 @@ test("marketing pages load without overflow or runtime errors", async ({
   expect(errors).toEqual([]);
 });
 
+test("homepage buttons and capability links render decorative SVG arrows", async ({
+  page,
+}) => {
+  await page.goto("/");
+  const platform = page.locator("#platform");
+  const links = [
+    "Our technology",
+    "View all capabilities",
+    "Connect partners",
+    "Run the relationship",
+    "Give members more reasons to return",
+  ];
+
+  for (const name of links) {
+    const link = platform.getByRole("link", { name: new RegExp(name) });
+    const arrow = link.locator("svg");
+    await expect(arrow).toBeVisible();
+    await expect(arrow).toHaveAttribute("aria-hidden", "true");
+    await expect(arrow).toHaveAttribute("stroke", "currentColor");
+  }
+});
+
 test("Contact Us loads country codes and handles validation and delivery", async ({
   page,
   isMobile,

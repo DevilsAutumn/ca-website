@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
 import { cn } from "@/lib/utils";
+import { Arrow } from "../ui/arrow";
 import { DesktopNavigation } from "./desktop-navigation";
 import { MobileNavigation } from "./mobile-navigation";
 import { NavigationActions } from "./navigation-actions";
@@ -21,7 +22,8 @@ export function SiteHeader() {
         <span>New</span> Loyalty partnerships, without the long integration
         cycle{" "}
         <Link href="/#platform">
-          See how it works <span aria-hidden="true">↗</span>
+          See how it works{" "}
+          <Arrow size={14} className="inline-block align-middle" />
         </Link>
       </div>
       <div

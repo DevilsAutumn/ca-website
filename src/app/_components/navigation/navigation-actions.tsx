@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { siteLinks } from "@/lib/site-links";
+import { Arrow } from "../ui/arrow";
 import { ButtonLink } from "../ui/button";
 
 export function NavigationActions({
@@ -30,10 +31,7 @@ export function NavigationActions({
           layout === "mobile" && "self-start",
         )}
       >
-        Sign in{" "}
-        <span aria-hidden="true" className="text-teal">
-          ↗
-        </span>
+        Sign in <Arrow size={14} className="text-teal" />
       </Link>
     </div>
   );

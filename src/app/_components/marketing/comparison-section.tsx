@@ -41,11 +41,7 @@ export function ComparisonSection() {
                 "[&_a:hover]:text-teal-dark",
               )}
             >
-              Reported outcomes:{" "}
-              <a href="https://www.currencyalliance.com/">
-                Currency Alliance homepage
-              </a>
-              . Results vary by partnership, market, and operating baseline.
+              Results vary by partnership, market, and operating baseline.
             </p>
           </div>
           <aside

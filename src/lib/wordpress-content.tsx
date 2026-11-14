@@ -3,6 +3,7 @@ import "server-only";
 import { DomUtils, parseDocument } from "htmlparser2";
 import Image from "next/image";
 import { createElement, type ReactNode } from "react";
+import { Arrow } from "@/app/_components/ui/arrow";
 import { siteLinks } from "@/lib/site-links";
 import { legacyRedirects } from "@/lib/site-redirects";
 import { getWordPressImageUrl } from "@/lib/wordpress-images";
@@ -205,7 +206,7 @@ export function renderWordPressArticle(
               rel="noreferrer"
               className="my-3 inline-flex items-center gap-2"
             >
-              Watch on {video.provider} <span aria-hidden="true">↗</span>
+              Watch on {video.provider} <Arrow size={16} />
             </a>,
           ]
         : [];

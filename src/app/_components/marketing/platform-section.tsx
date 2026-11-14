@@ -65,15 +65,13 @@ export function PlatformSection() {
               <h3>{item.title}</h3>
               <p>{item.copy}</p>
             </div>
-            <span
+            <Arrow
+              size={22}
               className={cn(
-                "capability-arrow text-teal-dark text-[22px] leading-[1.25] transition-[transform] duration-180 ease-[ease]",
+                "mt-1 text-teal-dark transition-[transform] duration-180 ease-[ease] max-[541px]:size-5",
                 "pointer-fine:[.capability:hover_&]:transform-[translate(2px,-2px)]",
               )}
-              aria-hidden="true"
-            >
-              ↗
-            </span>
+            />
           </Link>
         ))}
       </div>
