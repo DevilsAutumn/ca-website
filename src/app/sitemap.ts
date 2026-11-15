@@ -10,6 +10,7 @@ const pagePaths = [
   "/about-us",
   "/our-technology",
   siteLinks.solutions,
+  siteLinks.pricing,
   "/insights",
   "/case-studies",
   "/contact-us",

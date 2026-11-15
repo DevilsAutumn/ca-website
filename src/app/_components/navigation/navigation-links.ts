@@ -130,6 +130,12 @@ export const navigationItems: readonly NavigationItem[] = [
     href: "/our-technology",
   },
   {
+    type: "link",
+    id: "pricing",
+    label: "Pricing",
+    href: siteLinks.pricing,
+  },
+  {
     type: "menu",
     id: "resources",
     label: "Resources",

@@ -1,12 +1,13 @@
 import { Arrow } from "@/app/_components/ui/arrow";
 import { TextLink } from "@/app/_components/ui/text-link";
+import { siteLinks } from "@/lib/site-links";
 import {
   formatPercent,
-  platformFeeRate,
-} from "../../../solutions/_content/platform-pricing";
+  issuanceFeeRate,
+} from "../../../_content/platform-pricing";
 import { launchGuides } from "../_content/launch-content";
 
-const platformFee = formatPercent(platformFeeRate);
+const platformFee = formatPercent(issuanceFeeRate);
 
 export function LaunchPlanning() {
   return (
@@ -37,6 +38,12 @@ export function LaunchPlanning() {
               <p className="m-0 text-[15px] leading-relaxed text-ink-muted">
                 No upfront platform setup or licence fees.
               </p>
+              <TextLink
+                href={siteLinks.pricing}
+                className="mt-3 whitespace-normal"
+              >
+                View full pricing <Arrow />
+              </TextLink>
             </div>
           </div>
           <div className="border-y border-line py-4">

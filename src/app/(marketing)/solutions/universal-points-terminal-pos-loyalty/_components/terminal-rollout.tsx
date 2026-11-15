@@ -4,8 +4,8 @@ import { siteLinks } from "@/lib/site-links";
 import { BrandedCaseStudy } from "../../_components/branded-case-study";
 import {
   formatPercent,
-  platformFeeRate,
-} from "../../_content/platform-pricing";
+  issuanceFeeRate,
+} from "../../../_content/platform-pricing";
 import { airMilesTerminalCase } from "../_content/terminal-content";
 
 export function TerminalRollout() {
@@ -34,7 +34,7 @@ export function TerminalRollout() {
           </div>
           <div className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-4 border border-line bg-surface p-5 sm:gap-6 sm:p-7">
             <p className="m-0 text-[clamp(42px,5vw,65px)] leading-none font-medium tracking-[-0.06em] text-teal-dark tabular-nums">
-              {formatPercent(platformFeeRate)}
+              {formatPercent(issuanceFeeRate)}
             </p>
             <div>
               <h3 className="mt-0 mb-1 text-[16px] leading-snug font-extrabold">

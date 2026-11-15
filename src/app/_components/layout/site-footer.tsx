@@ -64,6 +64,7 @@ export function SiteFooter() {
           <Link href={siteLinks.partnerMarketplace}>Marketplace</Link>
           <Link href="/#proof">Partners</Link>
           <Link href="/#comparison">Compare</Link>
+          <Link href={siteLinks.pricing}>Pricing</Link>
           <Link href="/insights">Insights</Link>
         </div>
         <div>

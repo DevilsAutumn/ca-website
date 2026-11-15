@@ -3,10 +3,10 @@ import { cn } from "@/lib/utils";
 import {
   exampleLoyaltyShare,
   formatPercent,
-  platformFeeRate,
-} from "../_content/platform-pricing";
+  issuanceFeeRate,
+} from "../../_content/platform-pricing";
 
-const feeRateLabel = formatPercent(platformFeeRate);
+const feeRateLabel = formatPercent(issuanceFeeRate);
 const loyaltyShareLabel = formatPercent(exampleLoyaltyShare);
 
 type Point = readonly [x: number, y: number];
@@ -112,7 +112,7 @@ function FeeGraphic({
   const [loyaltyX, loyaltyY] = loyalty.center;
   const [feeX, feeY] = fee.center;
   const loyaltyRadius = revenue.radius * Math.sqrt(exampleLoyaltyShare);
-  const feeRadius = loyaltyRadius * Math.sqrt(platformFeeRate);
+  const feeRadius = loyaltyRadius * Math.sqrt(issuanceFeeRate);
   const feeMarkerRadius = feeRadius + 2.3;
 
   return (

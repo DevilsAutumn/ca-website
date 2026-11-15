@@ -1,16 +1,17 @@
 import { Arrow } from "@/app/_components/ui/arrow";
 import { TextLink } from "@/app/_components/ui/text-link";
+import { siteLinks } from "@/lib/site-links";
 import {
   exampleLoyaltyShare,
   formatPercent,
-  platformFeeRate,
-} from "../_content/platform-pricing";
+  issuanceFeeRate,
+} from "../../_content/platform-pricing";
 import { PlatformFeeDiagram } from "./platform-fee-diagram";
 
-const feeRateLabel = formatPercent(platformFeeRate);
+const feeRateLabel = formatPercent(issuanceFeeRate);
 const loyaltyShareLabel = formatPercent(exampleLoyaltyShare);
 const exampleRevenueFeeShare = formatPercent(
-  exampleLoyaltyShare * platformFeeRate,
+  exampleLoyaltyShare * issuanceFeeRate,
 );
 
 type PlatformPricingProps = {
@@ -55,6 +56,9 @@ export function PlatformPricing({ nextStep }: PlatformPricingProps) {
             </strong>
             .
           </p>
+          <TextLink href={siteLinks.pricing} className="mt-4">
+            View full pricing <Arrow />
+          </TextLink>
         </div>
         <PlatformFeeDiagram
           aria-label="Illustrative pricing breakdown"

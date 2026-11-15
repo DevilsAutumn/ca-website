@@ -54,6 +54,7 @@ test("the sitemap lists only reachable canonical pages", async ({
     expect.arrayContaining([
       origin,
       origin + "/solutions",
+      origin + "/pricing",
       origin + insight,
       origin + caseStudy,
     ]),

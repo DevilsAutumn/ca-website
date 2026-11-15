@@ -1,8 +1,8 @@
 import type { ComparisonRow } from "@/app/_components/marketing/comparison/comparison-table";
 import {
   formatPercent,
-  platformFeeRate,
-} from "../../../solutions/_content/platform-pricing";
+  issuanceFeeRate,
+} from "../../../_content/platform-pricing";
 
 export const vendorAlternatives = [
   "Traditional enterprise systems",
@@ -23,7 +23,7 @@ export const vendorComparisonRows = [
   {
     criterion: "Ongoing platform cost",
     alternatives: ["3K–700K per year", "2K–20K per year"],
-    alliance: `${formatPercent(platformFeeRate)} of loyalty value issued`,
+    alliance: `${formatPercent(issuanceFeeRate)} of loyalty value issued`,
   },
   {
     criterion: "CRM and campaign tools",

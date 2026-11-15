@@ -54,6 +54,7 @@ test("marketing pages load without overflow or runtime errors", async ({
     "/about-us",
     "/contact-us",
     "/solutions",
+    "/pricing",
     "/solutions/loyalty-partnerships-marketplace",
     "/solutions/loyalty-partner-lifecycle-management",
     "/solutions/loyalty-account-linking",

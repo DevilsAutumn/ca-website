@@ -2,9 +2,9 @@ import { Arrow } from "@/app/_components/ui/arrow";
 import { TextLink } from "@/app/_components/ui/text-link";
 import { siteLinks } from "@/lib/site-links";
 import {
+  exchangeFeeRate,
   formatPercent,
-  platformFeeRate,
-} from "../../../solutions/_content/platform-pricing";
+} from "../../../_content/platform-pricing";
 
 export function ExchangeOperations() {
   return (
@@ -33,15 +33,21 @@ export function ExchangeOperations() {
         </div>
         <div className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-4 border border-line bg-surface p-5 sm:gap-6 sm:p-7">
           <p className="m-0 text-[clamp(42px,5vw,65px)] leading-none font-medium tracking-[-0.06em] text-teal-dark tabular-nums">
-            {formatPercent(platformFeeRate)}
+            {formatPercent(exchangeFeeRate)}
           </p>
           <div>
             <h3 className="mt-0 mb-1 text-[16px] leading-snug font-extrabold">
-              Platform fee on the value exchanged
+              Platform fee on eligible exchanges
             </h3>
             <p className="m-0 text-[15px] leading-relaxed text-ink-muted">
               Zero upfront platform setup or licence fees.
             </p>
+            <TextLink
+              href={siteLinks.pricing}
+              className="mt-3 whitespace-normal"
+            >
+              View full pricing <Arrow />
+            </TextLink>
           </div>
         </div>
       </div>

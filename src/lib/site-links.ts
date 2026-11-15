@@ -15,6 +15,7 @@ export const siteLinks = {
   partnerMarketplace: "/solutions/loyalty-partnerships-marketplace",
   partnershipManagement: "/solutions/loyalty-partner-lifecycle-management",
   payWithPoints: "/use-cases/pay-with-points",
+  pricing: "/pricing",
   privacyPolicy: "/privacy-policy",
   register: "/sign-up",
   signIn: "https://dashboard.currencyalliance.com/#/auth/login",
